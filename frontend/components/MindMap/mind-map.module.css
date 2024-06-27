@@ -1,0 +1,11 @@
+#mind-map {
+  width: fit-content;
+  height: fit-content;
+}
+
+.node-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

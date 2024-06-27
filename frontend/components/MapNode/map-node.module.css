@@ -1,0 +1,56 @@
+.node {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+}
+
+.name-input {
+  width: 210px;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 18px;
+  border-radius: 5px;
+  border: 0;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.name-input:focus {
+  outline: 2px solid var(--gray);
+}
+
+.add-node-button,
+.delete-node-button {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-node-button {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 7px;
+}
+
+.delete-node-button,
+.delete-node-button:hover {
+  background-color: var(--light-gray);
+}
+
+.delete-node-button {
+  color: var(--dark-gray);
+  width: 20px;
+}
+
+.add-node-button,
+.delete-node-button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
