@@ -1,6 +1,6 @@
 # ClipMap - A tool to create mind maps
 
-Check out the official website here: https://clipmap.net/
+This is a demo repository for the code of ClipMap, you can access the oficial application at https://clipmap.net
 
 ClipMap is a web application designed for creating mind maps.
 
@@ -21,3 +21,7 @@ The simple interface is user-friendly, without an overwhelming number of buttons
 Code by [Leo Teles](https://github.com/telesleo).
 <br />
 Design by [Lucas Teles](https://github.com/lucastelesss).
+
+---
+
+This repository doesn't necessary provide the full or latest code of ClipMap.
