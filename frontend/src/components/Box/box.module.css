@@ -1,0 +1,12 @@
+.box {
+  box-sizing: border-box;
+  position: fixed;
+  width: calc(100% - (var(--margin) * 2));
+  margin: var(--margin);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+}
+
+.unanchored {
+  margin: 0;
+}

@@ -1,0 +1,25 @@
+.confirm-action {
+  top: 50%;
+  left: calc(50% - var(--margin));
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 100;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

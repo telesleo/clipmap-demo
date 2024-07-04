@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: mind_map_app
+    ports:
+      - '3001:3001'
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+      - DB_NAME=mind_map
+      - DB_PORT=3306
+      - DB_DIALECT=mysql
+      - APP_PORT=3001
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.0.21
+    container_name: mind_map_db
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_DATABASE: mind_map
+      MYSQL_ROOT_PASSWORD: password
+    healthcheck:
+      test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost']
+      timeout: 10s
+      retries: 5

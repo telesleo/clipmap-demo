@@ -1,0 +1,39 @@
+#feedback-box {
+  right: 0;
+  left: auto;
+  bottom: var(--dialog-offset);
+  max-width: 500px;
+}
+
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+#feedback-box input,
+#feedback-box textarea {
+  box-shadow: none;
+  border: 1px solid var(--gray);
+}
+
+#feedback-box-send-button {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#status-message {
+  text-align: center;
+  font-size: 15px;
+  color: var(--dark-gray);
+}
+
+@media screen and (max-width: 650px) {
+  #feedback-box {
+    bottom: 80px;
+    max-width: 500px;
+  }
+}

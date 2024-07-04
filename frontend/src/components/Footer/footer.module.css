@@ -1,0 +1,38 @@
+#footer {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: var(--header-footer-height);
+  padding: var(--margin) 0;
+}
+
+#text {
+  font-size: 14px;
+  color: var(--dark-gray);
+  margin: 0;
+}
+
+#text a {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+#feedback-button {
+  position: fixed;
+  bottom: var(--margin);
+  right: var(--margin);
+}
+
+@media screen and (max-width: 650px) {
+  #feedback-button {
+    position: fixed;
+    bottom: calc(var(--margin) + 25px);
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+}

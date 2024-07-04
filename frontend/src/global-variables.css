@@ -1,0 +1,16 @@
+:root {
+  --black: black;
+  --white: white;
+  --light-gray: #eaeaea;
+  --dark-gray: #303030;
+  --gray: #828282;
+  --blue: #3993ff;
+  --dark-blue: #3381e0;
+  --border-radius: 5px;
+  --box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  --red: rgb(206, 22, 22);
+  --margin: 10px;
+  --padding: 20px;
+  --dialog-offset: 55px;
+  --header-footer-height: 60px;
+}

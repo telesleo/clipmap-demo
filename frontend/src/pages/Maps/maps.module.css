@@ -1,0 +1,49 @@
+#maps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--light-gray);
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.button {
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.existing-map-button {
+  background-color: inherit;
+  border: 2px solid var(--dark-gray);
+  color: var(--dark-gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.existing-map-button:hover {
+  background-color: inherit;
+}
+
+.icon-and-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-button {
+  background-color: inherit;
+  color: var(--black);
+  padding: 0;
+}
+
+.delete-button:hover {
+  background-color: inherit;
+  color: var(--red);
+}
